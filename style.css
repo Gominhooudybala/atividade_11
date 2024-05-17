@@ -5,11 +5,39 @@
 }
 
 :root {
-    --main-background: #1e293b;
+    --main-background: hsl(217, 33%, 17%);
     --text-color: #f8fafc;
+    --nav-background: #09090b;
+    --nav-hover: #3b0764;
 }
 
 body {
     background-color: #1e293b;
     color: var(--text-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav {
+    background-color: var(--nav-background);
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+nav a:hover {
+     color: var(--nav-hover);
+}
+
+nav ul {
+    list-style: none;
 }
